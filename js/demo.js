@@ -8,6 +8,21 @@
  * Copyright 2018, Codrops
  * http://www.codrops.com
  */
+
+ const hamburger=document.querySelector(".hamburger");
+ const navLinks=document.querySelector(".navlinks");
+ const links=document.querySelectorAll(".navlinks li");
+ 
+ hamburger.addEventListener('click',()=>{
+	 navLinks.classList.toggle("open");
+	 links.forEach(link=>{
+		 link.classList.toggle("fade");
+	 });
+ 
+	 hamburger.classList.toggle("toggle");
+ });
+
+ 
 {
 	// Calculates the offsetTop or offsetLeft of an element relative to the viewport 
 	// (not counting with any transforms the element might have)
