@@ -8,16 +8,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 body {
 	--color-text: #252525;
     --color-bg: #e8e8e8;
-    --color-link: #ec1752;
-    --color-link-hover: #eb1851;
+    --color-link: #053742;
+    --color-link-hover: #053742;
     --color-info: #272526;
     --grid-item-bg: #f1f1f1;
-    --color-close: #ec1752;
+    --color-close: #053742;
 	font-family: Futura, "futura-pt", sans-serif;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
-	background-color: #fff;
+	background-color: rgb(120, 168, 154);
 	background-color: var(--color-bg);
 }
 
@@ -28,7 +28,7 @@ nav{
     position:fixed;
     z-index:100;
     color:#f2f5f7;
-    background-color: #270542;
+    background-color: #053742;
     box-shadow:0 3px 20px rgba(0,0,0,0.2);
 
 }
@@ -70,8 +70,7 @@ nav{
 }
 
 .navlinks li a:hover{
-    color:rgb(29, 29, 29);
-    background-color:rgb(214, 167, 255);
+    color:#4bbed8;
     padding:10px;
     border-radius:50px;
 
@@ -197,7 +196,7 @@ main {
     }
     .logo{
         padding: 2vh 4vw;
-        width:50%;
+        width:70%;
     }
     .hamburger{
         display:block;
@@ -211,8 +210,15 @@ main {
 
     }
 
+	.ro{
+		flex-direction:row;
+	}
+	.footer-contact{
+		width:80%;
+	}
+
     .navlinks{
-        background:#3e0549;
+        background: #053742;;
         position:fixed;
         opacity:1;
         height:100vh;
@@ -406,7 +412,7 @@ main {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	font-size: 2.65rem;
+	font-size: 2.3rem;
 	margin: 0 0 0.15rem;
 }
 
@@ -543,19 +549,37 @@ main {
 
 
 .footer{
-    background-color: #250542;
+    background-color: #053742;
     color:antiquewhite;
     padding:2.5%;
     text-align:center;
     width:100%;
-    height:15rem;
+    height:auto;
   
   }
+  .ro{
+	  display:flex;
+  }
+  .footer-logo{
+     
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	align-items: center;
+	/* background-color: #007bb5; */
+}
+
+.footer-contact{
+	width:50%;
+	text-align:center;
+}
   .footer a{
     color:antiquewhite;
     text-decoration: none;
 
   }
+
 
   .fa {
     padding:15px 12px;
