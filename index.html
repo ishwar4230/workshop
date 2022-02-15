@@ -7,7 +7,8 @@
     <title>Workshops</title>
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" >
+    <link rel="stylesheet" type="text/css" href="stylehf.css" >
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,30 +23,36 @@
 </head>
 
 <body class="loading">
-    <nav>
-        <div class="logo" style="z-index: 555;">
-            <img src="img\logoi.png" width=35px height=35px>
-            <a><b style="color:rgb(136, 25, 25); font-size:30px; ">Mega</b>lith 2022</a>
+    <header id="header">
+        <div class="megatext">
+           <h1 style="color:white;font-weight:600;"><span style="color: rgb(179, 36, 36);margin-left:50px; font-weight: 600;">Megalith</span> 2022</h1>
         </div>
-
-        <div class="hamburger ">
-            <div class="bars1 "></div>
-            <div class="bars2 "></div>
-            <div class="bars3 "></div>
+    
+        <div class="containerr">
+           <div id="logo" class="pull-left">
+              <a href="#" class="scrollto"><img src="img/logoi.png" style="height:50px;width:40px;" ></a>
+           </div>
+           <div class="hamburger">
+            <div class="bars1"></div>
+            <div class="bars2"></div>
+            <div class="bars3"></div>
         </div>
-
-        <ul class="navlinks ">
-            <li><a href="# ">HOME</a></li>
-            <li><a href="# ">EVENTS</a></li>
-            <li><a href="# ">Workshop</a></li>
-            <li><a href="# ">Our Team</a></li>
-            <li><a href="# ">Sponsors</a></li>
-            <li><a href="# ">CRP</a></li>
-            <li><button class="login-button ">Register</button></li>
-
-        </ul>
-
-    </nav>
+           <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                 <li ><a href="#home">Home</a></li>
+                 <li><a href="#crp">CRP</a></li>
+                 <li><a href="#">EVENTS</a></li>
+                 <li class="menu-active"><a href="#">WORKSHOP</a></li>
+                 <li><a href="#">SPONSORS</a></li>
+                 <li><a href="#">OUR TEAM</a></li>
+                 <li ><button  class="login-button" href="#intro"> <a >Register</a></button></li>
+              </ul>
+           </nav>
+        </div>
+     </header>
+     <div class="bg"></div>
+     <div class="bg bg2"></div>
+     <div class="bg bg3"></div>
 
     <svg class="hidden ">
         <symbol id="icon-arrow " viewbox="0 0 24 24 ">
@@ -277,6 +284,24 @@
     <script src="js/charming.min.js "></script>
     <script src="js/TweenMax.min.js "></script>
     <script src="js/demo.js "></script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/superfish/hoverIntent.js"></script>
+        <script src="lib/superfish/superfish.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/venobox/venobox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="contactform/contactform.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+   
 </body>
 
 </html>

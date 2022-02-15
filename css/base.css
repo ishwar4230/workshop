@@ -7,7 +7,6 @@ footer,
 header,
 hgroup,
 main,
-nav,
 section,
 summary {
     display: block;
@@ -223,101 +222,8 @@ body {
     background-color: var(--color-bg);
 }
 
-nav {
-    height: 49px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 100;
-    color: #f2f5f7;
-    background-color: #053742;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-}
 
-.logo {
-    display: flex;
-    width: auto;
-    align-items: center;
-    margin-left: 2.5%;
-    padding: 2.5vh 0vw;
-    padding-left: 10px;
-    text-align: left;
-    /* width: 30vw; */
-    color: #f2f5f7;
-    text-decoration: none;
-}
 
-.logo a {
-    color: #f2f5f7;
-    text-decoration: none;
-    font-size: 30px;
-    padding-left: 10px;
-}
-
-.navlinks {
-    width: 60vw;
-    position: fixed;
-    right: 0%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
-    list-style: none;
-    font-weight: 300;
-}
-
-.navlinks li a {
-    color: #f2f5f7;
-    margin: 0 0.2vw;
-    text-decoration: none;
-    transition: all ease-in-out 350ms;
-    /* padding:10px; */
-}
-
-.navlinks li a:hover {
-    color: #4bbed8;
-    padding: 10px;
-    border-radius: 50px;
-}
-
-.navlinks li {
-    position: relative;
-}
-
-.navlinks li a:hover::before {
-    width: 80%;
-}
-
-.login-button {
-    padding: 0.6rem 0.8rem;
-    margin-left: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #f2f5f7;
-    background-color: transparent;
-    border: 1.5px solid #f2f5f7;
-    border-radius: 2em;
-}
-
-.login-button:hover {
-    color: #fff;
-    background-color: rgb(136, 25, 25);
-    border: 1.5px solid rgb(136, 25, 25);
-    transition: all ease-in-out 350ms;
-}
-
-.hamburger div {
-    width: 30px;
-    height: 3px;
-    background: #f2f5f7;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-.hamburger {
-    display: none;
-}
 
 
 /* Page Loader */
@@ -399,84 +305,9 @@ main {
     * {
         overflow-x: visible;
     }
-    nav {
-        position: fixed;
-        z-index: 10;
-    }
-    .logo {
-        padding: 2vh 4vw;
-        width: 70%;
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 5;
-        transition: all 0.7s ease;
-    }
-    .navlinks {
-        background: #053742;
-        ;
-        position: fixed;
-        opacity: 1;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-        font-size: 30px;
-        padding: 0;
-    }
-    .login-button {
-        font-size: 30px;
-    }
-    .navlinks.open {
-        clip-path: circle(1500px at 90% -10%);
-        pointer-events: all;
-    }
-    .navlinks li {
-        opacity: 0;
-    }
-    .navlinks li:nth-child(1) {
-        transition: all 0.5s ease 0.2s;
-    }
-    .navlinks li:nth-child(2) {
-        transition: all 0.5s ease 0.4s;
-    }
-    .navlinks li:nth-child(3) {
-        transition: all 0.5s ease 0.6s;
-    }
-    .navlinks li:nth-child(4) {
-        transition: all 0.5s ease 0.7s;
-    }
-    .navlinks li:nth-child(5) {
-        transition: all 0.5s ease 0.8s;
-    }
-    .navlinks li:nth-child(6) {
-        transition: all 0.5s ease 0.9s;
-    }
-    .navlinks li:nth-child(7) {
-        transition: all 0.5s ease 1s;
-        margin: 0;
-    }
-    li.fade {
-        opacity: 1;
-    }
-    .toggle .bars1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .toggle .bars2 {
-        transition: all 0.2s ease;
-        width: 0;
-    }
-    .toggle .bars3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
+   
 }
+  
 
 .codrops-header {
     position: relative;
