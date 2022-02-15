@@ -8,11 +8,12 @@
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" href="bgstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script>
         document.documentElement.className = "js";
-        var supportsCssVars = function () {
+        var supportsCssVars = function() {
             var e, t = document.createElement("style");
             return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
         };
@@ -21,298 +22,265 @@
 </head>
 
 <body class="loading">
-    <nav>
-        <div class="logo" style="z-index: 555;">
-            <a><b style="color:rgb(136, 25, 25); font-size:30px; ">Mega</b>lith 2022</a>
-        </div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <nav>
+            <div class="logo" style="z-index: 555;">
+                <img src="img\logoi.png" width=35px height=35px>
+                <a><b style="color:rgb(136, 25, 25); font-size:30px; ">Mega</b>lith 2022</a>
+            </div>
 
-        <div class="hamburger">
-            <div class="bars1"></div>
-            <div class="bars2"></div>
-            <div class="bars3"></div>
-        </div>
+            <div class="hamburger ">
+                <div class="bars1 "></div>
+                <div class="bars2 "></div>
+                <div class="bars3 "></div>
+            </div>
 
-        <ul class="navlinks">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">Workshop</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">CRP</a></li>
-            <li><button class="login-button">Register</button></li>
+            <ul class="navlinks ">
+                <li><a href="# ">HOME</a></li>
+                <li><a href="# ">EVENTS</a></li>
+                <li><a href="# ">Workshop</a></li>
+                <li><a href="# ">Our Team</a></li>
+                <li><a href="# ">Sponsors</a></li>
+                <li><a href="# ">CRP</a></li>
+                <li><button class="login-button ">Register</button></li>
 
-        </ul>
+            </ul>
 
-    </nav>
+        </nav>
 
-    <svg class="hidden">
-        <symbol id="icon-arrow" viewbox="0 0 24 24">
+        <svg class="hidden ">
+        <symbol id="icon-arrow " viewbox="0 0 24 24 ">
             <title>arrow</title>
             <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
         </symbol>
-        <symbol id="icon-drop" viewbox="0 0 24 24">
+        <symbol id="icon-drop " viewbox="0 0 24 24 ">
             <title>drop</title>
             <path
-                d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+                d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z " />
             <path
-                d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+                d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z " />
         </symbol>
-        <svg id="icon-github" viewbox="0 0 33 33">
+        <svg id="icon-github " viewbox="0 0 33 33 ">
             <title>github</title>
             <path
-                d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29">
+                d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115
+                2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549
+                15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159
+                11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29 ">
             </path>
         </svg>
-        <svg id="icon-caret" viewbox="0 0 32 19">
+        <svg id="icon-caret " viewbox="0 0 32 19 ">
             <title>caret</title>
             <path
-                d="M31.423 3.976l-14.319 14.32a1.631 1.631 0 0 1-2.306 0L.478 3.976a1.631 1.631 0 0 1 0-2.307L1.63.516a1.631 1.631 0 0 1 2.307 0l12.013 12.013L27.964.516a1.63 1.63 0 0 1 2.306 0l1.154 1.153a1.63 1.63 0 0 1-.001 2.307z">
+                d="M31.423 3.976l-14.319 14.32a1.631 1.631 0 0 1-2.306 0L.478 3.976a1.631 1.631 0 0 1 0-2.307L1.63.516a1.631 1.631 0 0 1 2.307 0l12.013 12.013L27.964.516a1.63 1.63 0 0 1 2.306 0l1.154 1.153a1.63 1.63 0 0 1-.001 2.307z ">
             </path>
         </svg>
-    </svg>
-    <main>
+        </svg>
+        <main>
 
-        <div class="grid-wrap">
-            <div class="grid">
-                <a href="#" class="grid__item">
-                    <div class="grid__item-bg"></div>
-                    <div class="grid__item-wrap">
-                        <img class="grid__item-img"
-                            src="https://images.pexels.com/photos/2383277/pexels-photo-2383277.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                            alt="Some image" />
-                    </div>
-                    <h3 class="grid__item-title">G+4 Commercial Building<br> Design Workshop</h3>
-                    <h4 class="grid__item-number">Workshop 1</h4>
-                </a>
-                <a href="#" class="grid__item">
-                    <div class="grid__item-bg"></div>
-                    <div class="grid__item-wrap">
-                        <img class="grid__item-img"
-                            src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                            alt="Some image" />
-                    </div>
-                    <h3 class="grid__item-title">Building Information<br> Modelling Workshop</h3>
-                    <h4 class="grid__item-number">Workshop 2</h4>
-                </a>
-                <a href="#" class="grid__item">
-                    <div class="grid__item-bg"></div>
-                    <div class="grid__item-wrap">
-                        <img class="grid__item-img"
-                            src="https://images.pexels.com/photos/1394646/pexels-photo-1394646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                            alt="Some image" />
-                    </div>
-                    <h3 class="grid__item-title">How to Register</h3>
-                    <h4 class="grid__item-number"> Guide</h4>
-                </a>
+            <div class="grid-wrap ">
+                <div class="grid ">
+                    <a href="# " class="grid__item ">
+                        <div class="grid__item-bg "></div>
+                        <div class="grid__item-wrap ">
+                            <img class="grid__item-img " src="https://images.pexels.com/photos/2383277/pexels-photo-2383277.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 " alt="Some image " />
+                        </div>
+                        <h3 class="grid__item-title ">G+4 Commercial Building<br> Design Workshop</h3>
+                        <h4 class="grid__item-number ">Workshop 1</h4>
+                    </a>
+                    <a href="# " class="grid__item ">
+                        <div class="grid__item-bg "></div>
+                        <div class="grid__item-wrap ">
+                            <img class="grid__item-img " src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 " alt="Some image " />
+                        </div>
+                        <h3 class="grid__item-title ">Building Information<br> Modelling Workshop</h3>
+                        <h4 class="grid__item-number ">Workshop 2</h4>
+                    </a>
+                    <a href="# " class="grid__item ">
+                        <div class="grid__item-bg "></div>
+                        <div class="grid__item-wrap ">
+                            <img class="grid__item-img " src="https://images.pexels.com/photos/1394646/pexels-photo-1394646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 " alt="Some image " />
+                        </div>
+                        <h3 class="grid__item-title ">How to Register</h3>
+                        <h4 class="grid__item-number "> Guide</h4>
+                    </a>
 
-            </div>
-        </div>
-        <!-- /grid-wrap -->
-        <div class="content">
-            <div class="content__item">
-                <div class="content__item-intro">
-                    <img class="content__item-img"
-                        src="https://images.pexels.com/photos/2383277/pexels-photo-2383277.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                        alt="Some image" />
-                    <h2 class="content__item-title">G+4 Commercial Building<br> Design Workshop</h2>
                 </div>
-                <h3 class="content__item-subtitle" style="font-weight: 700">MIDAS R&D CENTRE</h3>
+            </div>
+            <!-- /grid-wrap -->
+            <div class="content ">
+                <div class="content__item ">
+                    <div class="content__item-intro ">
+                        <img class="content__item-img " src="https://images.pexels.com/photos/2383277/pexels-photo-2383277.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 " alt="Some image " />
+                        <h2 class="content__item-title ">G+4 Commercial Building<br> Design Workshop</h2>
+                    </div>
+                    <h3 class="content__item-subtitle " style="font-weight: 700 ">MIDAS R&D CENTRE</h3>
 
-                <div class="content__item-text" style="text-align:center;padding:2.5%;background:rgba(255,255,255,0.5)">
-                    <div class="bordershad">
-                        <p>“It’s not the beauty of a building you should look at; it's the construction of the
-                            foundation that will stand the test of time” - David Allan Coe </p>
-                        <br>
-                        <p> Megalith in collaboration with MIDAS R&D CENTRE is set to organize the workshops which will
-                            present an opportunity to learn from the professionals with years of experience in
-                            technology and management of Building Design. This gives
-                            MIDAS the right pedigree to provide work specific comprehensive consultancy and quality
-                            education. This workshop on commercial building design will use MIDAS Gen software and will
-                            aim to familiarize participants of exhaustive analysis,
-                            design, and drafting of a solution for a variety of building and general structures.</p>
-                        <br><br> To know more about "MIDAS Gen" software, <br><a target="_blank"
-                            href="./files/MIDAS_Gen_Catalog.pdf" style="text-decoration:underline;color:maroon">Click
+                    <div class="content__item-text " style="text-align:center;padding:2.5%;background:rgba(255,255,255,0.5) ">
+                        <div class="bordershad ">
+                            <p>“It’s not the beauty of a building you should look at; it's the construction of the foundation that will stand the test of time” - David Allan Coe </p>
+                            <br>
+                            <p> Megalith in collaboration with MIDAS R&D CENTRE is set to organize the workshops which will present an opportunity to learn from the professionals with years of experience in technology and management of Building Design. This
+                                gives MIDAS the right pedigree to provide work specific comprehensive consultancy and quality education. This workshop on commercial building design will use MIDAS Gen software and will aim to familiarize participants of
+                                exhaustive analysis, design, and drafting of a solution for a variety of building and general structures.</p>
+                            <br><br> To know more about "MIDAS Gen " software, <br><a target="_blank " href="./files/MIDAS_Gen_Catalog.pdf " style="text-decoration:underline;color:maroon ">Click
                             Here!</a>
-                    </div>
-                    <br><br>
-                    <div class="bordershadb">
-                        <h3 style="color: rgb(12, 105, 101);">Benefits</h3>
-                        <ul style="text-align:left;">
-                            <li>The major objective of the workshop is to practically train participants about the
-                                design
-                                and analysis of complex and large structures.</li>
-                            <li>Certificate of participation from Midas R&D Centre & Megalith, IIT Kharagpur</li>
-                        </ul>
-                    </div>
-                    <br><br>
-                    <div class="bordershadd">
-                        <h3 style="color: rgb(12, 105, 101);">Duration</h3>
-                        <p>
-                            The workshop will be conducted by MIDAS R&D CENTRE on 9<sup>th</sup> March 2022. A one day
-                            workshop comprising of 2 sessions of 3 hours to be provided on MIDAS Gen to the participants
-                            with a hands-on session on theory as well as
-                            practical problems. </p>
+                        </div>
+                        <br><br>
+                        <div class="bordershadb ">
+                            <h3 style="color: rgb(12, 105, 101); ">Benefits</h3>
+                            <ul style="text-align:left; ">
+                                <li>The major objective of the workshop is to practically train participants about the design and analysis of complex and large structures.</li>
+                                <li>Certificate of participation from Midas R&D Centre & Megalith, IIT Kharagpur</li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <div class="bordershadd ">
+                            <h3 style="color: rgb(12, 105, 101); ">Duration</h3>
+                            <p>
+                                The workshop will be conducted by MIDAS R&D CENTRE on 9<sup>th</sup> March 2022. A one day workshop comprising of 2 sessions of 3 hours to be provided on MIDAS Gen to the participants with a hands-on session on theory as
+                                well as practical problems. </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- /content__item -->
-            <div class="content__item">
-                <div class="content__item-intro">
-                    <img class="content__item-img"
-                        src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                        alt="Some image" />
-                    <h2 class="content__item-title"> Building Information<br> Modelling Workshop</h2>
-                </div>
-                <h3 class="content__item-subtitle">Trimble India Pvt. Ltd. </h3>
-                <div class="content__item-text" style="text-align:center;">
-                    <div class="bordershad">
-                        <p> Megalith in collaboration with Trimble Solutions India Pvt. Ltd is set to organize the
-                            workshops
-                            which will present an opportunity to learn from the professionals with years of experience
-                            in
-                            technology and management of Building Design.
-                            This workshop on Building Information Modeling (BIM) will use <strong>Tekla Structures
-                                software</strong> and will aim to familiarize participants with the application of the
-                            software in various Structural Engineering work.
-                        </p>
-                        <br>
-                        <p>
-                            To know more about “Tekla Structures” software, <br><a target="_blank"
-                                href="https://www.tekla.com/in/products/tekla-structures"
-                                style="text-decoration:underline;color:maroon">Click Here!</a>
-                        </p>
+                <!-- /content__item -->
+                <div class="content__item ">
+                    <div class="content__item-intro ">
+                        <img class="content__item-img " src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 " alt="Some image " />
+                        <h2 class="content__item-title "> Building Information<br> Modelling Workshop</h2>
                     </div>
-                    <br><br>
-                    <div class="bordershadb">
-                        <h3 style="color: rgb(12, 105, 101);">Benefits</h3>
-                        <ul style="text-align:left">
-                            <li>The major objective of the workshop is to practically familiarize participants with the
-                                benefits and usage of BIM tool.</li>
-                            <li>Certificate of participation from Trimble India Pvt. Ltd. & Megalith IIT Kharagpur</li>
-                        </ul>
+                    <h3 class="content__item-subtitle ">Trimble India Pvt. Ltd. </h3>
+                    <div class="content__item-text " style="text-align:center; ">
+                        <div class="bordershad ">
+                            <p> Megalith in collaboration with Trimble Solutions India Pvt. Ltd is set to organize the workshops which will present an opportunity to learn from the professionals with years of experience in technology and management of Building
+                                Design. This workshop on Building Information Modeling (BIM) will use <strong>Tekla Structures
+                                software</strong> and will aim to familiarize participants with the application of the software in various Structural Engineering work.
+                            </p>
+                            <br>
+                            <p>
+                                To know more about “Tekla Structures” software, <br><a target="_blank " href="https://www.tekla.com/in/products/tekla-structures " style="text-decoration:underline;color:maroon ">Click Here!</a>
+                            </p>
+                        </div>
+                        <br><br>
+                        <div class="bordershadb ">
+                            <h3 style="color: rgb(12, 105, 101); ">Benefits</h3>
+                            <ul style="text-align:left ">
+                                <li>The major objective of the workshop is to practically familiarize participants with the benefits and usage of BIM tool.</li>
+                                <li>Certificate of participation from Trimble India Pvt. Ltd. & Megalith IIT Kharagpur</li>
+                            </ul>
+                        </div>
+                        <br><br><br><br>
                     </div>
-                    <br><br><br><br>
                 </div>
-            </div>
-            <!-- /content__item -->
-            <div class="content__item">
-                <div class="content__item-intro">
-                    <img class="content__item-img"
-                        src="https://images.pexels.com/photos/1394646/pexels-photo-1394646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                        alt="Some image" />
-                    <h2 class="content__item-title">How to register</h2>
+                <!-- /content__item -->
+                <div class="content__item ">
+                    <div class="content__item-intro ">
+                        <img class="content__item-img " src="https://images.pexels.com/photos/1394646/pexels-photo-1394646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 " alt="Some image " />
+                        <h2 class="content__item-title ">How to register</h2>
+                    </div>
+                    <h3 class="content__item-subtitle "></h3>
+                    <div class="content__item-text ">
+                        <div class="bordershad " style="font-size: 0.9rem; ">
+                            <h3 style="color: rgb(12, 105, 101); "> Registration Procedure</h3>
+                            <p>
+                                <ul>
+                                    <li>Sign up as participant for Megalith 2022. (*skip this step if register already)</li>
+
+
+
+                                    <li>Sign in using your registered credentials to access the "My Profile " portal.
+                                        <button class="btn btn-info "><a href=" ./register ">Sign in to Register</a></button>
+
+                                    </li>
+                                    <li>In the "My Profile " portal, go to "Workshop Details " section. Click on the "Register Now " button to register for the workshop. </li>
+
+                                    <li>You need to pay the required workshop fees to complete the workshop registration process at the registration desk of Megalith 2022.</li>
+                                    <li>The workshop fees does not include the accommodation and events fee of the fest. You will have to pay separately for accommodation/events at the registration desk.</li>
+                                    <li>The accommodation fee for workshop participants will be charged on day to day basis.
+                                    </li>
+                                </ul>
+
+
+                            </p>
+                        </div><br><br><br><br>
+                        <div class="bordershadb " style="font-size: 0.9rem; margin-top: -29px; ">
+                            <h3 style="color: rgb(12, 105, 101); "> Workshop Fee Details</h3>
+                            <p>
+                                <ul>
+                                    <li>Workshop 1 (MIDAS Gen): ₹ 500</li>
+                                    <li>Workshop 2 (Tekla Structures): ₹ 500</li>
+                                    <li>Combination of Workshop 1 and 2: Charges ₹ 800 (You will save ₹ 200 for taking both workshops)
+                                    </li>
+                                    <li>Payment mode: Offline (Pay at the registration desk of Megalith 2022)</li>
+                                </ul>
+                            </p>
+                        </div><br><br>
+                        <div class="bordershadd " style="font-size: 0.9rem; ">
+                            <h3 style="color: rgb(12, 105, 101); ">Workshop Dates</h3>
+                            <p>
+                                <ul>
+                                    <li>Workshop 1 (MIDAS Gen) : March 9th, 2022.</li>
+                                    <li>Workshop 2 (Tekla Structures) : March 10th, 2022</li>
+                                </ul>
+                            </p>
+                            <p style="color: rgb(12, 105, 101); ">
+                                Note :All workshop participants are requested to bring their own laptops.
+                            </p>
+                        </div><br><br>
+                    </div>
                 </div>
-                <h3 class="content__item-subtitle"></h3>
-                <div class="content__item-text">
-                    <div class="bordershad" style="font-size: 0.9rem;">
-                        <h3 style="color: rgb(12, 105, 101);"> Registration Procedure</h3>
-                        <p>
-                        <ul>
-                            <li>Sign up as participant for Megalith 2022. (*skip this step if register already)</li>
 
-
-
-                            <li>Sign in using your registered credentials to access the "My Profile" portal.
-                                <button class="btn btn-info"><a href=" ./register
-                                    ">Sign in to Register</a></button>
-
-                            </li>
-                            <li>In the "My Profile" portal, go to "Workshop Details" section. Click on the "Register
-                                Now"
-                                button to register for the workshop. </li>
-
-                            <li>You need to pay the required workshop fees to complete the workshop registration
-                                process
-                                at
-                                the registration desk of Megalith 2022.</li>
-                            <li>The workshop fees does not include the accommodation and events fee of the fest. You
-                                will
-                                have to pay separately for accommodation/events at the registration desk.</li>
-                            <li>The accommodation fee for workshop participants will be charged on day to day basis.
-                            </li>
-                        </ul>
-
-
-                        </p>
-                    </div><br><br><br><br>
-                    <div class="bordershadb" style="font-size: 0.9rem; margin-top: -29px;">
-                        <h3 style="color: rgb(12, 105, 101);"> Workshop Fee Details</h3>
-                        <p>
-                        <ul>
-                            <li>Workshop 1 (MIDAS Gen): ₹ 500</li>
-                            <li>Workshop 2 (Tekla Structures): ₹ 500</li>
-                            <li>Combination of Workshop 1 and 2: Charges ₹ 800 (You will save ₹ 200 for taking both
-                                workshops)</li>
-                            <li>Payment mode: Offline (Pay at the registration desk of Megalith 2022)</li>
-                        </ul>
-                        </p>
-                    </div><br><br>
-                    <div class="bordershadd" style="font-size: 0.9rem;">
-                        <h3 style="color: rgb(12, 105, 101);">Workshop Dates</h3>
-                        <p>
-                        <ul>
-                            <li>Workshop 1 (MIDAS Gen) : March 9th, 2022.</li>
-                            <li>Workshop 2 (Tekla Structures) : March 10th, 2022</li>
-                        </ul>
-                        </p>
-                        <p style="color: rgb(12, 105, 101);">
-                            Note :All workshop participants are requested to bring their own laptops.
-                        </p>
-                    </div><br><br>
-                </div>
-            </div>
-
-            <button class="content__close">Close</button>
-            <svg class="content__indicator icon icon--caret">
-                <use xlink:href="#icon-caret"></use>
+                <button class="content__close ">Close</button>
+                <svg class="content__indicator icon icon--caret ">
+                <use xlink:href="#icon-caret "></use>
             </svg>
-        </div>
-    </main>
+            </div>
+        </main>
 
 
-    <footer class="footer" style=" z-index: 10">
-        <div class="row">
+        <footer class="footer " style=" z-index: 10 ">
+            <div class="row ">
 
-            <div class="footer-logo">
+                <div class="footer-logo ">
 
-                <a class="navbar-brand" href="#">Megalith 2022</a>
-                <p>Department of Civil Engineering, IIT Kharagpur
-                    <br /> West Bengal - 721302.
-                </p>
-                <br>
+                    <a class="navbar-brand " href="# ">Megalith 2022</a>
+                    <p>Department of Civil Engineering, IIT Kharagpur
+                        <br /> West Bengal - 721302.
+                    </p>
+                    <br>
 
-                <div class="footer-icons">
-                    <a href="https://www.facebook.com/megalithkgp/?ref=br_rs" target="_blank"
-                        class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/iitkgp.megalith" target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/company/megalith-iit-kharagpur/mycompany/" target="_blank"
-                        class="fa fa-linkedin"></a>
-                    <a href="https://www.youtube.com/channel/UColF5e7SjdkiOBrFrg0UTRw" target="_blank"
-                        class="fa fa-youtube"></a>
-                    <a href="https://twitter.com/megalithkgp" target="_blank" class="fa fa-twitter"></a>
+                    <div class="footer-icons ">
+                        <a href="https://www.facebook.com/megalithkgp/?ref=br_rs " target="_blank " class="fa fa-facebook "></a>
+                        <a href="https://www.instagram.com/iitkgp.megalith " target="_blank " class="fa fa-instagram "></a>
+                        <a href="https://www.linkedin.com/company/megalith-iit-kharagpur/mycompany/ " target="_blank " class="fa fa-linkedin "></a>
+                        <a href="https://www.youtube.com/channel/UColF5e7SjdkiOBrFrg0UTRw " target="_blank " class="fa fa-youtube "></a>
+                        <a href="https://twitter.com/megalithkgp " target="_blank " class="fa fa-twitter "></a>
+
+                    </div>
 
                 </div>
 
+
+
+                <div class="footercontact ">
+                    <p>Contact Us</p>
+                    <p><a href=" ">Mahendra Bera: 3333333333 </a></p>
+                    <p><a href=" ">Ashutosh Garg: 3333333333</a></p>
+                    <p><a href=" ">Satyaki Biswas: 3333333333 </a></p>
+                </div>
             </div>
+        </footer>
 
 
 
-            <div class="footercontact">
-                <p>Contact Us</p>
-                <p><a href="">Mahendra Bera: 3333333333 </a></p>
-                <p><a href="">Ashutosh Garg: 3333333333</a></p>
-                <p><a href="">Satyaki Biswas: 3333333333 </a></p>
-            </div>
-        </div>
-    </footer>
-
-
-
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/charming.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/demo.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js "></script>
+        <script src="js/masonry.pkgd.min.js "></script>
+        <script src="js/charming.min.js "></script>
+        <script src="js/TweenMax.min.js "></script>
+        <script src="js/demo.js "></script>
 </body>
 
 </html>
