@@ -1,0 +1,711 @@
+html, body * { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
+
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body{
+  margin:0;
+  overflow-x:hidden;
+  background-image:linear-gradient(to bottom right,#e6caca,#90c3af,#Cadad7);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  font-family:"raleway" ,sans-serif;
+  background: #fff;
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+  background:
+  linear-gradient(
+  rgba(246,247,249,0.8),
+  rgba(246,247,249,0.8)),
+  url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/sky-clouds-cloudy-mountain.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+
+html {
+  height:100%;
+  letter-spacing:1px;
+ 
+}
+.bg {
+  animation:slide 6s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(178, 220, 228) 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:7s;
+}
+
+.bg3 {
+  animation-duration:8s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+/* Background ends*/ 
+a {
+  color: #f82249;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#header a:hover,
+#header a:active,
+#header a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+#intro a:hover,
+#intro a:active,
+#intro a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+
+html, body * { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
+
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body{
+  margin:0;
+  overflow-x:hidden;
+  background-image:linear-gradient(to bottom right,#e6caca,#90c3af,#Cadad7);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  font-family:"raleway" ,sans-serif;
+  background: #fff;
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+  background:
+  linear-gradient(
+  rgba(246,247,249,0.8),
+  rgba(246,247,249,0.8)),
+  url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/sky-clouds-cloudy-mountain.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.bg {
+  animation:slide 6s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(178, 220, 228) 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:7s;
+}
+
+.bg3 {
+  animation-duration:8s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+/* Background ends*/ 
+a {
+  color: #f82249;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#header a:hover,
+#header a:active,
+#header a:focus {
+  color: #da5e5e;
+  outline: none;
+  text-decoration: none;
+}
+
+#intro a:hover,
+#intro a:active,
+#intro a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+h1{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  letter-spacing: initial;
+  
+}
+
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: flex;
+  background: #3b3737;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  right: 5px;
+  bottom: 15px;
+  transition:  0.3s ease-in-out;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  /* padding-top: 6px; */
+}
+
+.back-to-top:focus {
+  background: #e0072f;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #e0072f;
+  color: #fff;
+}
+
+/* Sections Header
+--------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 48px;
+  /* padding: 10px 0px; */
+  width: 100vw;
+  position: fixed;
+  background-color: #053742;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  right: 0;
+  transition: all 0.5s;
+  box-sizing: initial;
+  z-index:100;
+}
+.containerr{
+  padding-right: 24px;
+}
+#logo img{
+  position: fixed;
+  top: 4px;
+  left: 4px;
+  width: 39px;
+
+}
+.hamburger div{
+  width:30px;
+  height:3px;
+  background: #f2f5f7;
+  margin:5px;
+  transition:all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+@media(max-width:860px)
+{
+.hamburger{
+        display:block;
+        position:absolute;
+        cursor:pointer;
+        right:5%;
+        top:50%;
+        transform:translate(-5%,-50%);
+        z-index:5;
+        transition:all 0.7s ease;
+
+    }
+    .nav-menu{
+      clip-path:circle(1500px at 90% -10%);
+height: 100%;
+display: flex;
+
+    }
+    .nav-menu{
+      width:80vw;
+      display:flex;
+      padding-top:1%;
+      justify-content:space-evenly;
+      align-items:center;
+      text-transform: uppercase;
+      list-style: none;
+      font-weight:300;
+     
+  
+  }
+  .nav-menu{
+    background-color: #053742;
+    position:fixed;
+    opacity:1;
+    height:100vh;
+    width:100%;
+    flex-direction:column;
+    clip-path:circle(50px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+     font-size:30px;
+
+
+}
+.login-button{
+    font-size:30px;
+}
+  
+  .nav-menu li a{
+      color:#f2f5f7;
+      margin:0 0.2vw;
+      text-decoration:none;
+      transition:all ease-in-out 350ms;
+      padding:10px;
+  
+  }
+/*   
+  .nav-menu li a:hover{
+      color:#000;
+      background-color:#fff;
+      padding:10px;
+      border-radius:50px;
+  
+  } */
+  
+  .nav-menu li{
+      position:relative;
+  
+  }
+  .nav-menu li a:hover::before{
+      width:80%;
+  }
+  
+  .login-button{
+      padding:0.6rem 0.8rem;
+      margin-left:2vw;
+      font-size: 1.5rem;
+      cursor:pointer;
+      color:#f2f5f7;
+      background-color: transparent;
+      border:1.5px solid #f2f5f7;
+      border-radius: 2em;
+  }
+  /* .login-button:hover{
+      color:#fff;
+      background-color: #dd5f24;
+      border:1.5px solid #dd5f24;
+      transition:all ease-in-out 350ms;
+  } */
+  
+ .nav-menu.open{
+        clip-path:circle(1500px at 90% -10%);
+        pointer-events: all;
+        position: fixed;
+        left: 0px;
+    }
+    .nav-menu li{
+        opacity:0;
+        
+    }
+    .nav-menu li:nth-child(1){
+        transition:all 0.5s ease 0.2s; 
+    }
+    .nav-menu li:nth-child(2){
+        transition:all 0.5s ease 0.4s; 
+    }
+    .nav-menu li:nth-child(3){
+        transition:all 0.5s ease 0.6s; 
+    }
+    .nav-menu li:nth-child(4){
+        transition:all 0.5s ease 0.7s; 
+    }
+    .nav-menu li:nth-child(5){
+      transition:all 0.5s ease 0.8s; 
+  }
+  .nav-menu li:nth-child(6){
+      transition:all 0.5s ease 0.9s; 
+  }
+  .nav-menu li:nth-child(7){
+      transition:all 0.5s ease 1s;
+      margin:0;
+  }
+  li.fade{
+      opacity:1;
+  }
+  .toggle .bars1{
+      transform:rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .bars2{
+      transition:all 0.2s ease;
+      width:0;
+  }
+ 
+.toggle .bars3{
+      transform:rotate(45deg) translate(-5px,-6px);
+  }
+
+}  
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  margin-top: 1px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-menu button{
+  padding: 0.1rem 0.6rem;
+    /* margin-left: 2vw; */
+    margin-right: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #f2f5f7;
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+}
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+#lastli{
+  width: 8px;
+  height: 2px;
+  margin-right: 8px;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+
+#nav-menu-container {
+  right:0;
+  float: right;
+  margin: 0;
+  position: absolute;
+    top: 0px;
+  
+}
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+  padding: 10px 6px;
+  text-decoration: none;
+  display: inline-block;
+  color: wheat;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  outline: none;
+}
+
+.nav-menu .menu-active a,
+.nav-menu a:hover {
+  color: #f82249;
+  color: #da5e5e;
+}
+
+.nav-menu > li {
+  margin-left: 8px;
+}
+
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e96565;;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover > a:before,
+.nav-menu .menu-active > a:before {
+  visibility: visible;
+  width: 100%;
+  
+}
+
+
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+  border-radius: 3px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #060c22;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+  border-radius: 3px;
+}
+
+.nav-menu ul li:hover > a {
+  background: #f82249;
+  color: #fff;
+}
+.nav-menu ul  li button::after > a {
+  background: #f82249;
+  color: #fff;
+  background-color: wheat;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 5px 15px 0 0;
+  border: 0;
+  background: none;
+  font-size: 30px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: rgb(23, 25, 26);
+  
+  padding: 0 5px 0 0;
+  margin: 0 5px 0 0;
+}
+
+/* Mobile Nav Styling */
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+ 
+  background: rgba(5, 5, 5, 0.9);
+  background: linear-gradient(to bottom, black,rgba(0, 0, 0, 0.705));
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+ 
+}
+
+#mobile-nav ul li {
+  position: relative;
+  background-color: rgba(39, 38, 38, 0.068);
+  margin: 4px 0;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #f82222;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #f82249;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #f82249;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(28, 29, 29, 0.349);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+
+
+
+h1{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  letter-spacing: initial;
+  
+}
+
+
+main{
+     padding-top:6rem;
+   
+    text-align: center;
+
+}
+
